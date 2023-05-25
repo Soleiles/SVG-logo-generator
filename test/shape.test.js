@@ -34,37 +34,37 @@ describe('Shape', () => {
     describe('Initialize textColor', () => {
         it('should set textColor properly', () => {
             const textColor = 'black';
-            const circle = new Circle('BUB', textColor);
-            expect(circle.textColor).toBe(textColor);
+            const shape = new Shape('BUB', textColor);
+            expect(shape.textColor).toBe(textColor);
         })
     })
     describe('Initialize shape', () => {
         it('should set shape properly', () => {
             const exampleShape = 'Circle';
-            const circle = new Circle(
+            const shape = new Shape(
                 'BUB', 
                 'black', 
                 exampleShape
             );
-            expect(circle.shape).toBe(exampleShape);
+            expect(shape.shape).toBe(exampleShape);
         })
     })
     describe('Initialize shapeColor', () => {
         it('should set text properly', () => {
             const shapeColor = "yellow";
-            const circle = new Circle(
+            const shape = new Shape(
                 'BUB', 
                 'black', 
                 'Circle', 
                 shapeColor
             );
-            expect(circle.shapeColor).toBe(shapeColor);
+            expect(shape.shapeColor).toBe(shapeColor);
         })
     })
     describe('render() method', () => {
-        it('should print SVG code with data', () => {
-            const circle = new Circle(
-                'BEE', 
+        it('should print the SVG', () => {
+            const shape = new Shape(
+                'BUB', 
                 'black', 
                 'Circle', 
                 'yellow'
@@ -72,10 +72,10 @@ describe('Shape', () => {
             const logo = `<svg xmlns="http://www.w3.org/2000/svg" width="300" height="200">
         <rect width="300" height="200" fill='white' />
         <circle cx="150" cy="100" r="80" fill="yellow" />
-        <text x="150" y="125" font-size="60" text-anchor="middle" fill="black">BEE</text>
+        <text x="150" y="125" font-size="60" text-anchor="middle" fill="black">BUB</text>
         </svg>`;
 
-            expect(circle.render()).toBe(logo);
+            expect(shape.render()).toBe(logo);
         })
     })
 })
