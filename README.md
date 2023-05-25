@@ -17,6 +17,10 @@ The purpose of this project was to utilize polymorphism by using parent and chil
 
 As shown in the demo, after the user types in `node index`, they are given prompts to fill to generate their SVG logo.
 
+
+https://github.com/Soleiles/SVG-logo-generator/assets/126806504/8887da6d-a779-4362-aa1f-fc61d0d1014d
+
+
 If this video does not work, [click here](https://drive.google.com/file/d/1HXAiMVXq6CSVsg5QZ0ALAY2C2ou15huf/view?usp=sharing)
 
 ## Testing
