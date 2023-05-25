@@ -2,6 +2,7 @@ const inquirer = require('inquirer');
 const generateSVG = require('./utils/generateLogo');
 const fs = require('fs');
 
+// ****** Array for Questions ****** //
 const questions = [
     {
         type: 'input',
@@ -30,12 +31,14 @@ const questions = [
     }
 ];
 
+// ****** Overwrites SVG files ****** //
 function writeToFile(fileName, data) {
     fs.writeFile(`./examples/${fileName}.svg`, data, (err) =>
         err ? console.error(err) : console.log('Done.')
     );
 }
 
+// ****** Initializes Question Prompt ****** //
 function init() {
     inquirer
     .prompt(questions)

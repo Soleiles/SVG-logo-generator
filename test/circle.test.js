@@ -1,5 +1,6 @@
 const Circle = require('../lib/circle');
 
+// ****** Tests Circle Constructor ****** //
 describe('Circle', () => {
     describe('Instantiate', () => {
         it('should be an instance of the Circle class', () => {

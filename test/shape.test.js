@@ -1,5 +1,6 @@
 const Shape = require('../lib/shape');
 
+// ****** Tests Shape Constructor ****** //
 describe('Shape', () => {
     describe('Instantiate', () => {
         it('should be an instance of the Shape class', () => {

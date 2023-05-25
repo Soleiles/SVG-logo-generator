@@ -1,5 +1,6 @@
 const Square = require('../lib/square');
 
+// ****** Tests Square Constructor ****** //
 describe('Square', () => {
     describe('Instantiate', () => {
       it('should be an instance of the Square class', () => {
